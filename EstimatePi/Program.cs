@@ -6,8 +6,13 @@ namespace EstimatePi
   {
     static void Main()
     {
+      Console.WriteLine("Estimating Pi using the Monte Carlo method...");
+      Console.WriteLine("This program generates random points in a unit square and counts how many fall inside a unit circle.");
+      Console.WriteLine("The ratio of points inside the circle to total points is used to estimate Pi.");
+      Console.WriteLine("The more points generated, the more accurate the estimate will be.");
+      Console.WriteLine("Please wait ...");
       // Set the number of iterations
-      int iterations = 1000000;
+      int iterations = int.MaxValue;
       // Initialize the random number generator
       Random random = new Random();
       // Initialize the count of points inside the circle
